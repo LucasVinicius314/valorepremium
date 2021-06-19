@@ -30,7 +30,7 @@ function carregaGeneros(){
 function enviarRequisicao(path, callback){
 	let xhr = new XMLHttpRequest ()
 
-    xhr.open ('GET','https://api.themoviedb.org/3/movie/'+path+'?language=pt-BR&api_key=53ef64079e9ac440e77f2516ea1c1fcb')
+    xhr.open ('GET','https://api.themoviedb.org/3/movie/movie_id?language=pt-BR&api_key=53ef64079e9ac440e77f2516ea1c1fcb')
     xhr.onload = callback
     xhr.send()
 }
@@ -85,7 +85,8 @@ function pesquisaFilmes (){
 
     let query = document.getElementById ('inputPesquisa').value
 
-    xhr.open ('GET', TMDB_ENDPOINT + '/search/movie?api_key=' + API_KEY + '&query=' + query)
+    xhr.open ('GET','https://api.themoviedb.org/3/movie//search/movie?api_key=53ef64079e9ac440e77f2516ea1c1fcb&query=api_key'
+	)
     xhr.onload = exibeFilmes
     xhr.send()
 }

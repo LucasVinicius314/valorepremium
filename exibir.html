@@ -27,7 +27,11 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Procurar Filmes" id="inputPesquisa">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" id="btnPesquisa"
+                    onclick="pesquisaFilmes()"><i class="fas fa-search"></i></button>
+            </form>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <div class="form-inline my-2 my-lg-0">
                     <label onclick="history.back();" style="font-weight: bold; font-size: 18px;top: 5px; position: relative;">
@@ -85,19 +89,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="exibir.js"></script>
-	<style>
-	div.form-inline label {
-		font-weight: bold; 
-		font-size: 18px;
-		top: 5px; 
-		position: relative;
-		cursor: pointer;
-	}
-	
-	div.form-inline label i {
-		padding-right: 5px;
-	}
-	</style>
+
 </body>
 
 </html>

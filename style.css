@@ -76,6 +76,18 @@ body{background: black;}
 
 /* Titulos */
 
+div.form-inline label {
+    font-weight: bold; 
+    font-size: 18px;
+    top: 5px; 
+    position: relative;
+    cursor: pointer;
+}
+
+div.form-inline label i {
+    padding-right: 5px;
+}
+
 h1{
     color: rgb(167, 10, 10);
     font-size: 300%;
