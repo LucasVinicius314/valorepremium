@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <title>Valore Premium</title>
+    <link rel="icon" href="imgs/Icon Valore Premium.png">
+</head>
+
+<body onload="carregaFilmes()">
+    <header class="container header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img src="imgs/Valore Premium.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Lançamentos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Em Destaque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Avaliações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrevistas & Making Of</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novidades</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Procurar Filmes" id="inputPesquisa">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" id="btnPesquisa"
+                        onclick="pesquisaFilmes()"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container main">
+        <h1 id="lancamento">Lançamentos</h1>
+        <section class="row lancamento">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="MiCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                
+                            </ol>
+                            <div class="carousel-inner">
+                                
+                            </div>
+                            <a class="carousel-control-prev carousel-controls" href="#carouselExampleIndicators"
+                                role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-controls" href="#carouselExampleIndicators"
+                                role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 id="em destaque">Em Destaque</h1>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row" id="tela">
+                    
+				</div>
+            </div>
+        </div>
+        </section>
+
+        <h1 id="ultimas">Últimas Avaliações</h1>
+        <section class="row avalicao">
+            <div id="avaliacao" class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <center><i id="person" class="far fa-user-circle"></i></center>
+                <h2>Júlia Diniz</h2>
+                <p><b>Filme:</b> Lara Croft: Tomb Raider</p>
+                <p><b>Avaliação:</b> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p id="comentario"><b>Comentário:</b> Eu jogo até hoje Tomb Raider e o filme foi muito bem produzido
+                    e
+                    estrelado por
+                    Angelina Jolie (Lara Croft) que eu não saberia dizer quem é mais famosa. Como seria muito
+                    difícil
+                    fazer um filme com o mesmo enredo de algum dos jogos de Lara o Diretor optou por fazer uma
+                    história
+                    semelhante aos jogos mais completamente original e deixando nossa Indiana Jones de saias bem à
+                    vontade.</p>
+            </div>
+            <div id="avaliacao" class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <center><i id="person" class="far fa-user-circle"></i></center>
+                <h2>Fabiana Freire</h2>
+                <p><b>Filme:</b> Aves de Rapina</p>
+                <p><b>Avaliação:</b> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p id="comentario"><b>Comentário:</b> Um filme muito bom que retrata a bipolaridade e loucura da
+                    Harley
+                    Quinn, nas cenas
+                    de luta quando ela atira em seus oponentes e sai cores vivas e glitter é como ela vê o mundo com
+                    a
+                    loucura dela, o final com a morte foi sim meio sem graça mas o resto do filme eu ri bastante e
+                    não
+                    me arrependi nem um pouco de ver.</p>
+                <p></p>
+            </div>
+
+            <div id="avaliacao" class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <center><i id="person" class="far fa-user-circle"></i></center>
+                <h2>Carolina Amorim</h2>
+                <p><b>Filme:</b> Enola Holmes</p>
+                <p><b>Avaliação:</b> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p id="comentario"><b>Comentário:</b> Amei. Um filme leve, muito gostoso e intrigante de assistir.
+                    As
+                    atuações são muito
+                    boas, amei os personagens da Millie Bobby Brown e do Louis Patridge, os cenários e os figurinos
+                    são
+                    muito bem feitos. O filme tem alguns clichês, mas não achei que foi nada que prejudicou minha
+                    experiência. Já estou ansioso para mais histórias de Enola Holmes!</p>
+                <p></p>
+            </div>
+            <div class="btndir">
+                <button class="btn success carregar_mais"><i class="material-icons">add</i><b>Carregar
+                        Mais</b></button>
+            </div>
+        </section>
+
+        <h1 id="entrevista">Entrevistas & Making Of</h1>
+        <div id="entrevistas">
+            <section class="row entrevistas">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <iframe src="https://www.youtube.com/embed/XNZbBQT3l94" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h3>Bacurau</h3>
+                    <p><b>Diretor:</b> Kleber Mendonça Filho, Juliano Dornelles</p>
+                    <p><b>Roteiro:</b> Kleber Mendonça Filho, Juliano Dornelles</p>
+                    <p><b>Estreia:</b> 2019</p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <iframe src="https://www.youtube.com/embed/mYE8UpvZsJM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h3>Nise - O Coração da Loucura</h3>
+                    <p><b>Diretor:</b> Roberto Berliner</p>
+                    <p><b>Roteiro:</b> Roberto Berliner, Chris Alcazar, Maurício Lissovski, Leonardo Rocha, Flávia
+                        Castro,
+                        Maria Camargo, Patrícia Andrade</p>
+                    <p><b>Estreia:</b> 2016</p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <iframe src="https://www.youtube.com/embed/D43Hx6zFUzY" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h3>Que Horas Ela Volta</h3>
+                    <p><b>Diretor:</b> Anna Muylaert</p>
+                    <p><b>Roteiro:</b> Anna Muylaert, Regina Casé</p>
+                    <p><b>Estreia:</b> 2015</p>
+                </div>
+			</section>
+        </div>
+        <div class="btndir">
+            <button class="btn success carregar_mais"><i class="material-icons">add</i><b>Carregar Mais</b></button>
+        </div>
+        <section class="container">
+            <section class="row novidades">
+                <div class="row novidade">
+                    <div class="novidades">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                            <h1 id="novidades">Novidades</h1>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <a
+                                        href="https://g1.globo.com/pop-arte/cinema/oscar/2021/noticia/2021/04/26/chloe-zhao-vence-oscar-e-marvel-ganha-sua-primeira-diretora-ganhadora-de-oscar.ghtml">
+                                        <img id="foto-novidades" class="fotos"
+                                            src="imgs/Oscar 2021 - Diretora campeão.jpg"></a>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                    <a
+                                        href="https://g1.globo.com/pop-arte/cinema/oscar/2021/noticia/2021/04/26/chloe-zhao-vence-oscar-e-marvel-ganha-sua-primeira-diretora-ganhadora-de-oscar.ghtml">
+                                        <h4>Chloé Zhao vence Oscar e Marvel ganha sua primeira diretora ganhadora de
+                                            Oscar</h4>
+                                    </a>
+                                    <p>Cineasta chinesa é responsável por 'Os Eternos', que deve estrear em 2021.
+                                        Ela
+                                        será a
+                                        primeira
+                                        ganhadora de um Oscar de melhor direção a comandar um filme das duas grandes
+                                        editoras nos
+                                        EUA.
+                                    </p>
+                                    <div>
+                                        <button class="novidades-icon"><b>OSCAR 2021</b></button>
+                                        <button class="novidades-icon"><b>MELHOR DIRETORA</b></button>
+                                        <button class="novidades-icon"><b>PRIMEIRA</b></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <a
+                                        href="https://claudia.abril.com.br/famosos/primeiras-mulheres-negras-vencem-oscar-cabelo-penteado/"><img
+                                            id="foto-novidades" class="fotos" src="imgs/MULHERES NEGRAS.jpg"></a>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                    <a
+                                        href="https://claudia.abril.com.br/famosos/primeiras-mulheres-negras-vencem-oscar-cabelo-penteado/">
+                                        <h4>Conheça as primeiras mulheres negras a ganhar Oscar de maquiagem e
+                                            cabelo
+                                        </h4>
+                                    </a>
+                                    <p>"Sei que um dia não será incomum ou inovador. Vai ser apenas normal”, disse
+                                        Mia
+                                        Neal,
+                                        chefe
+                                        de
+                                        departamento da cabeleireiros de 'A Voz Suprema do Blue'
+                                    </p>
+                                    <div>
+                                        <button class="novidades-icon"><b>OSCAR</b></button>
+                                        <button class="novidades-icon"><b>PENTEADOS</b></button>
+                                        <button class="novidades-icon"><b>MULHERES NEGRAS</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                    <a
+                                        href="https://www.cnnbrasil.com.br/entretenimento/2021/04/25/indicados-e-vencedores-do-oscar-2021">
+                                        <img id="foto-novidades" class="fotos"
+                                            src="imgs/normandland-melhor-filme.JPG"></a>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                                    <a
+                                        href="https://www.cnnbrasil.com.br/entretenimento/2021/04/25/indicados-e-vencedores-do-oscar-2021">
+                                        <h4>Oscar 2021: 'Nomadland' ganha prêmio de melhor filme; veja todos os
+                                            vencedores</h4>
+                                    </a>
+                                    <p>O longa conta a história de uma mulher que vira 'nômade moderna' diante dos
+                                        efeitos a
+                                        Grande
+                                        Recessão nos Estados Unidos
+                                    </p>
+                                    <div>
+                                        <button class="novidades-icon"><b>OSCAR</b></button>
+                                        <button class="novidades-icon"><b>VENCEDORES</b></button>
+                                        <button class="novidades-icon"><b>NOMADLAND</b></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="sobre" class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <h1>Sobre</h1>
+                            <p>Os filmes hoje em dia revela realmente do que a mulher é capaz diante da câmera e
+                                também
+                                na
+                                vida real.
+                                Colocar a mulher na linha frente mostrando na ficcão que ela pe capaz tanto quantoum
+                                homem,
+                                a realizarou dirigir um filme, ser protagonista da própria história.
+                                Mas nós sabemos que isso está caminhando pois há ainda muito o que fazer para
+                                valorizara
+                                mulher deixando o preconceito por raça e cor.
+                            </p>
+                            <center>
+                                <h1 id="edi">Editorial</h1>
+                            </center>
+                            <div class="infos">
+                                <p><a id="inf" class="fas fa-user-alt"></a> <b>Redação:</b> Rúbia Matos</p>
+                                <p><a id="inf" class="fas fa-user-alt"></a> <b>Pesquisa:</b> Rúbia Matos</p>
+                                <p><a id="inf" class="fas fa-user-alt"></a> <b>Gerente Geral:</b> Rúbia Matos</p>
+                            </div>
+                            <h3>redes sociais:</h3>
+                            <div class="redes">
+                                <a href="https://www.instagram.com/rubiamattos/" class="fab fa-instagram"></a>
+                                <a href="https://www.twitter.com/rubiamattos/" class="fab fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/rubiamattos/" class="fab fa-linkedin-in"></a>
+                                <a href="https://wa.me/5531999192234 " class="fab fa-whatsapp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</section>
+    </main>
+    <footer class="container footer">
+        <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+            <p>Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas</p>
+
+            <p class="fabi"> Fabiana, Brandão, Rapha, Júlia, Ana e JG são as estrelas daqui :P</p>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-1 col-lg-1">
+            <img id="imgfooter" src="imgs/Valore Premium.png" class="logo">
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

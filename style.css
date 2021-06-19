@@ -1,0 +1,419 @@
+body{background: black;}
+
+.fabi{
+    font-size:1px;
+}
+.logo{ max-width: 100PX;}
+
+.navbar{
+    min-width:100%;
+}
+
+.fa-search{
+    color:white;
+}
+
+/* Estrela de Avaliação */
+
+.checked {color: rgb(167, 10, 10);}
+
+/* Botão de Categorias */
+
+#categoria{
+    right: -10%;
+    padding: 5px 15px;
+    font-size: 18px;
+    background: rgb(236, 183, 183);
+    color: rgb(167, 10, 10);
+    border: 1px solid rgb(167, 10, 10);
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom:10px;
+}
+
+.categoria option{
+    background: rgb(236, 183, 183);
+    color: rgb(167, 10, 10);
+    border: 1px solid rgb(167, 10, 10);
+    border-radius: 5px;
+}
+
+/* Botão de + Carregar Mais */
+
+.carregar_mais {
+    border: 0.5px solid;
+    padding: 7px 28px; 
+    cursor: pointer; 
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+
+.btndir{
+    text-align:right !important;
+}
+
+
+.success {
+    background-color: rgb(167, 10, 10); 
+    color: rgb(236, 183, 183);
+} 
+
+.success:hover{
+    background-color: rgb(236, 183, 183);
+     color: rgb(167, 10, 10);
+    }
+
+.carregar_mais b{ margin-left: 2vh;}
+
+.carregar_mais i{
+    position: absolute;
+    margin-top: 0.6vh;
+    margin-left: -2.3vh;
+} 
+
+/* Titulos */
+
+h1{
+    color: rgb(167, 10, 10);
+    font-size: 300%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: rgb(255, 77, 77);
+    font-size: 200%;
+    text-align: left;  
+    margin-bottom: 10px; 
+    margin-top: 15px;
+}
+
+h3{
+    color: rgb(255, 72, 72);
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 15px;  
+    margin-top: 15px;
+}
+
+h4{
+    color: rgb(247, 117, 117);
+    font-size: 100%; 
+    margin-bottom: 10px;  
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* Paragrafo */
+
+p{
+    color: white;
+    margin: 1%
+}
+
+p b{color: rgb(228, 150, 150);}
+
+/* Menu */
+
+.menu1{
+    text-decoration: none;
+}
+
+.menu1 a{
+    color: rgb(236, 183, 183);
+    font-size: 18px;
+}
+
+.menu1 a:hover{color: rgb(167, 10, 10);}
+
+.header{
+    background: rgb(29, 28, 28);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Campo de pesquisa */
+
+.texto_pes{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto_pes i{
+    font-size: 18px;
+    position: absolute;
+    left: 5%;
+    color: rgb(236, 183, 183);
+}
+
+.texto_pes input{
+    padding: 2px 3px;
+    margin-left: 5px;
+    background:transparent;
+    border: 1px solid rgb(236, 183, 183);  
+    outline: none;
+    border-radius: 5px;
+}
+
+.texto_pes:focus-within input::placeholder{ visibility: hidden;}
+
+.texto_pes:focus-within i{ visibility: hidden;}
+
+.texto_pes input{ color: rgb(236, 183, 183);}
+
+.texto_pes input::placeholder{
+    color: rgb(236, 183, 183);
+    padding-left: 20px;
+}
+
+/* Lançamento */
+
+#lancamentos{
+    text-align: justify;
+    margin-bottom: 2%;
+}
+
+/* Em Destaque */
+
+.carde{ 
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+}
+
+.card-title{
+    color: rgb(255, 77, 77);
+    font-size: 150%;
+    text-align: center;  
+    margin-bottom: 10px; 
+    margin-top: 15px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.btn-primary{
+    border: 0.5px solid;
+    padding: 7px 20px; 
+    cursor: pointer; 
+    align-items: center;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: rgb(167, 10, 10); 
+    color: rgb(236, 183, 183);
+} 
+
+.btn-primary:hover{
+    background-color: rgb(236, 183, 183);
+     color: rgb(167, 10, 10);
+    }
+
+.btn-primary a{ margin-left: 2vh;}
+
+/* Avaliação */
+
+#comentario{ text-align: justify;}
+
+#person{
+    color: rgb(236, 183, 183);
+    align-content: center;
+    font-size: 4rem;
+    margin-top: 10%;
+}
+
+/* Entrevistas */
+
+#entrevistas iframe{ margin-top: 10%;}
+
+/* Novidades */
+
+.novidades{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#novidade{
+    text-decoration: none;
+    text-align: justify;
+    font-size: 15px;
+    left: -4%;
+}
+
+#novidade a{text-decoration: none;}
+
+.novidades-icon{
+    margin-top: 3%;                
+    border: 0.2px solid;   
+    cursor: pointer; 
+    border-radius: 5px;
+    background-color: rgb(236, 183, 183); 
+    color: rgb(167, 10, 10);
+    font-size: 12px;
+    margin-bottom:10px;
+}
+
+.novidades-icon:hover{ 
+    background-color: rgb(167, 10, 10); 
+    color: rgb(236, 183, 183);
+}
+
+/* Sobre */
+
+#sobre{
+    text-align: justify;
+    line-height: 1.3;
+    font-size: 18px;
+}
+
+/* Editorial */
+
+#edi{ 
+    margin-top: 40px;
+}
+
+.infos .fas{
+    font-size: 1rem;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+#inf{color: rgb(167, 10, 10);}
+
+/* Redes Sociais */
+
+.redes a{
+  color: rgb(167, 10, 10);
+  height: 10%;
+  width: 10%;
+  padding: 7%;
+  text-decoration: none;
+  margin-top: -5%;
+  margin-bottom: 15%;
+  align-items: center;
+} 
+
+.redes{ 
+    margin-bottom: 5%;
+}
+
+
+.fab{
+    font-size: 1.8rem;
+    align-items: center;
+}
+
+#redes a:hover{color: rgb(236, 183, 183);} 
+
+/* Rodapé */
+
+.footer{
+    background: rgb(29, 28, 28);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+    align-items: center;
+}
+
+  /* Carousel */
+
+#MiCarousel{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 10px 10px 38px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 38px -13px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 38px -13px rgba(0,0,0,0.75);
+}
+  
+.carousel-img{
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; 
+    height: 100%;   
+    width: 100%;
+    z-index: 2;
+    -webkit-clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media screen and (max-width:770px){
+    .carousel-img{
+        height:300px;
+    }
+    .carousel-item{
+        height:600px;
+    }
+    #filme{
+        margin-top:300px;
+    }
+}
+ 
+.div-r{
+    color: white;
+    padding: 40px;
+    background: black;
+}
+  
+.carousel-pagination{
+    background-color:rgb(250, 28, 28) !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 100%;
+    position: relative;
+    bottom: -50px;
+    opacity: 0.5;
+}
+
+.card-date {
+	font-size: 20px;
+}
+  
+.filme-data  h2 {
+	margin-left: 4px;
+}
+  
+.carousel-pagination.active{ opacity: 1;}
+
+.carousel-controls{display: none;}
+
+/* Media Queries */
+
+
+
+@media screen and (max-width: 600px){
+    #poster{
+        display: block;
+    }
+
+    .row .novidades{
+        display: block;
+    }
+}
+
+.carde{
+    width:100%;
+    max-height:500px;
+}
+
+.cardei{
+    margin-bottom: 10px;
+}
